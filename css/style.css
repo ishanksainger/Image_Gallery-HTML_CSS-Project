@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.mainSec {
+    width: 100%;
+    height: 100%;
+}
+.box-container {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box {
+    width: 25%;
+    margin: 10px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.7s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex; /* Add this property to make the box a flex container */
+    
+}
+
+.box p {
+    /* Remove the 'position: absolute;' to let the text flow naturally within the flex container */
+    flex: 1; /* Add this property to let the text take the available height */
+    display: flex; /* Add this property to make the text container a flex container */
+    align-items: flex-end; /* Align the text to the bottom of the box */
+    justify-content: center; /* Center the text horizontally */
+    color: white;
+    padding: 10px;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.box:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover p {
+    opacity: 1;
+    /* Show the text when hovering over the box */
+}
+
+.box:hover::before {
+    opacity: 1;
+}
+
+.box1 {
+    background-image: url("../images/image1.jpg");
+    background-size: cover;
+}
+
+.box2 {
+    background-image: url("../images/image2.jpeg");
+    background-size: cover;
+}
+
+.box3 {
+    background-image: url("../images/image3.jpeg");
+    background-size: cover;
+}
+
+.box4 {
+    background-image: url("../images/image4.jpeg");
+    background-size: cover;
+}
+
+.box5 {
+    background-image: url("../images/image5.jpeg");
+    background-size: cover;
+}
+
+.box6 {
+    background-image: url("../images/image6.jpeg");
+    background-size: cover;
+}
+
+.box7 {
+    background-image: url("../images/image7.jpeg");
+    background-size: cover;
+}
+
+.box8 {
+    background-image: url("../images/image8.jpeg");
+    background-size: cover;
+}
+
+.box9 {
+    background-image: url("../images/image9.jpeg");
+    background-size: cover;
+}
+
+.box10 {
+    background-image: url("../images/image2.jpeg");
+    background-size: cover;
+}
+
+.box11 {
+    background-image: url("../images/image1.jpg");
+    background-size: cover;
+}
+
+.box12 {
+    background-image: url("../images/image4.jpeg");
+    background-size: cover;
+}
+
+.box13 {
+    background-image: url("../images/image3.jpeg");
+    background-size: cover;
+}
+
+.box14 {
+    background-image: url("../images/image7.jpeg");
+    background-size: cover;
+}
+
+.box15 {
+    background-image: url("../images/image6.jpeg");
+    background-size: cover;
+}
